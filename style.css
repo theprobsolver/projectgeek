@@ -1,0 +1,42 @@
+html,body {
+    cursor: url(goodiris.png), auto;
+    
+
+background-color: rgb(90, 200, 210) ;
+color:rgb(0, 0, 0);
+font-size: 16;
+}
+
+
+
+.griffy {
+    font-family: "griffy", system-ui, sans-serif  
+    font-size: 20px;
+    font-style: 400;   
+}
+
+.Hollow {
+    font-family: "Londrina Outline", sans-serif;
+    font-weight: 20;
+    font-style: normal;
+}
+h1 {
+    text-shadow: rgb(120, 120, 120) 5px 5px 5px;
+    text-align: center;
+}
+a {
+    cursor: url(openportalgate.png), auto;
+    
+}
+
+.mycenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* or any other percentage */
+    
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
