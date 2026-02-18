@@ -1,224 +1,241 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Stargate</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <script type="text/javascript" src="script.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Strike&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="openportalgate.png">
-    </head>
+<head>
+    <title>Stargate SG-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="openportalgate.png">
 
-     <nav class="navbar">
-        <ul class="nav-links">
-<br>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            font-family: 'Protest Strike', sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            padding-top: 60px;
+        }
 
 
-<h3>Navigation Links:</h3>
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            z-index: 9999;
+            border-bottom: 2px solid #00aaff;
+        }
 
-<br>
-            <li><a href="#story">The Story</a></li>
-<br>
-            <li><a href="#RecentDevs">Recent Developments</a></li>
-            <br>
-            <li><a href="#cast">Cast</a></li>
-        </ul>
+        .navbar a {
+            color: #00aaff;
+            text-decoration: none;
+            padding: 16px 32px;
+            font-family: 'Audiowide', sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background 0.2s, color 0.2s;
+            cursor: pointer;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background-color: #00aaff;
+            color: #000;
+        }
+        .page {
+            display: none;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        h1 {
+            font-family: 'Audiowide', sans-serif;
+            color: #00aaff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Audiowide', sans-serif;
+            color: #00aaff;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #cccccc;
+        }
+
+        a {
+            color: #00aaff;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 16px 0;
+        }
+
+        iframe {
+            margin: 20px 0;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a onclick="showPage('home')" id="tab-home" class="active">Home</a>
+        <a onclick="showPage('story')" id="tab-story">Story</a>
+        <a onclick="showPage('cast')" id="tab-cast">Cast</a>
+        <a onclick="showPage('recent')" id="tab-recent">Recent Devs</a>
     </nav>
+    <div class="page active" id="page-home">
+        <h1>Stargate SG-1</h1>
 
-    
+        <img src="righto.png" alt="Stargate">
 
-    
-    <body class="griffy">
-        <h1>Stargate Sg-1</h1>
-          
-    
-          <br>
-          <br>
-          <table class="center">
-         <img src="righto.png" class="mycenter">
-          <br>
-          <br>
-          <br>
+        <p>
+            <b>Stargate SG-1</b> is a <i>series</i> created July 27, 1997. It was made after the original
+            Stargate Movie by <u>Roland Emmerich and Dean Devlin</u>, before <u>Brad Wright and Jonathan Glassner</u>
+            made the SG-1 series following the movie's colossal success.
+        </p>
 
-          
-          
-          <b>Stargate Sg-1</b> is a <i>series</i> created July 27, 1997. It was made after the original Stargate Movie by <u>Roland Emmerich and Dean Devlin</u>
-          before <u>Brad Wright and Jonathan Glassner</u> made the Sg-1 series since the movies colossal success.
-          <br> 
-          <br>
-          It is a Show about how the military discovered an ancient structure made by an alien race thosands of years ago.
-           <br>
-          It was built by this race on nearly every planet, and when correctly used could enable travel to other worlds.
-           <br>
-           <br>
-           Here are some Stargate Info links:
-           <br>
-           <br> 
-          <a href="https://youtu.be/3E1_QjwE08s">Show Intro</a>
-<br>
-<br>
-           <a href="https://en.wikipedia.org/wiki/Stargate_SG-1"> Sg-1 Wiki</a>
-    
-          <br>
-          <br>
-          <a href="https://www.imdb.com/title/tt0118480"> IMDb</a>
-        
-          <br>
-          <br>
+        <p>
+            It is a show about how the military discovered an ancient structure made by an alien race thousands
+            of years ago. It was built by this race on nearly every planet, and when correctly used could enable
+            travel to other worlds.
+        </p>
 
-          
+        <p>Here are some Stargate info links:</p>
+        <p><a href="https://youtu.be/3E1_QjwE08s" target="">Show Intro</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Stargate_SG-1" target="">SG-1 Wiki</a></p>
+        <p><a href="https://www.imdb.com/title/tt0118480" target="">IMDb</a></p>
+    </div>
 
-          <br>
-          <br>
-<section id="story">
-  <h2>The Story</h2>
-</section>
+    <div class="page" id="page-story">
+        <h2>Story</h2>
 
-          
+        <p>
+            "Stargate SG-1" was created by <b>Brad Wright</b> and <b>Jonathan Glassner</b>,
+            with Brad Wright serving as executive producer and writer throughout the series.
+        </p>
 
+        <p>
+            The original Stargate movie was directed by Roland Emmerich and written by Dean Devlin.
+        </p>
 
-"Stargate SG-1" was created by Brad Wright and Jonathan Glassner.
-<br>
-<br>
-ith Brad Wright serving as an executive producer and writer throughout the series
-<br>
-<br>
-The original Stargate movie however, was directed by Roland Emmerich and written by Dean Devlin
-<br>
-<br>
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ugh25tw9RFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/Ugh25tw9RFo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
 
-        After the events of the original stargate movie
-        <br>
-        the government initiates a new project to travel to other worlds using the gate, and bring back weapons or other technologies to help defent againt the alien threat
-        <br>
-        </sp>quite early on, they meet the <b>goa'uld</b> symbiotic worm like beings... But leaning much much to to parasites.
-        <br>
-        They take hosts and control thier bodies, kinda like posession but grosser. And they are the main <b>antagonists</b> of the series for a long time.
-        <br>
-        Teal'c was a host to one of these. But since it was still young and not agressive yet. He remained in control and a valuable member to the team after a turning point early on in the series.
-        <br>
-        but speaking of Teal'k...
-        <br>
+        <p>
+            After the events of the original Stargate movie, the government initiates a new project to travel
+            to other worlds using the gate, and bring back weapons or other technologies to help defend
+            against the alien threat.
+        </p>
 
-        <section id="cast">
-  <h2>Meet the Team</h2>
-</section>
-        <br>
+        <p>
+            Quite early on, they meet the <b>Goa'uld</b> — symbiotic worm-like beings, leaning much more
+            toward parasites. They take hosts and control their bodies, kinda like possession but grosser.
+            They are the main <b>antagonists</b> of the series for a long time.
+        </p>
 
-        <img src="SG1.avif" class="mycentre">
-         
-            <br>
-            <br>
-            The <b>Stargate cast</b> had 4 main members:
+        <p>
+            Teal'c was a host to one of these. But since it was still young and not aggressive yet,
+            he remained in control and became a valuable member of the team after a turning point
+            early on in the series.
+        </p>
+    </div>
+    <div class="page" id="page-cast">
+        <h1>Meet the Team</h1>
 
+        <img src="SG1.avif" alt="SG-1 Team">
 
+        <p>The <b>Stargate SG-1</b> cast had 4 main members:</p>
 
+        <p>
+            <b>Colonel O'Neill</b> — Richard Dean Anderson<br>
+            <b>Samantha Carter</b> — Amanda Tapping<br>
+            <b>Daniel Jackson</b> — Michael Shanks<br>
+            <b>Teal'c</b> — Christopher Judge
+        </p>
 
-          The Main Cast Of stargate include: 
-          <br> 
-          <br>
-          Colnel O'Neil (Richard dean Anderson).
-          <br> 
-          Samantha Carter (Amanda Tapping)
-          <br>
-          Daniel Jackson (Michael Shanks)
-          <br>
-          Teal'c (Christopher Judge)
-          <br>
-          <br>
-         These four chracters go on to explore many different worlds and are the first team created for said exploration
-          <br>
-          Colnel O'Neil is the leader.
-          <br>
-        Samantha Carter is the scientist.
-        <br>
-        Daniel Jackson is the Archeologist
-        <br>
-        And Teal'c is... Uh, the alien <i></i>
-           <br>
-           
+        <p>
+            These four characters go on to explore many different worlds and are the first team
+            created for said exploration.
+        </p>
 
-            <br>
-            <br>
-            <br>
+        <p>Colonel O'Neill is the leader.</p>
+        <p>Samantha Carter is the scientist.</p>
+        <p>Daniel Jackson is the archaeologist.</p>
+        <p>And Teal'c is... uh, the alien.</p>
+    </div>
 
-            <section id="RecentDevs">
-    <h2>Recent Developments</h2>
-    </section>
+    <div class="page" id="page-recent">
+        <h2>Recent Developments</h2>
 
-            <br>
+        <p>
+            MGM has recruited <b>Martin Gero</b> to be the executive producer for a brand new <b>Stargate series</b>.
+        </p>
 
-            MGM has recruited <b>Martin Gero</b> to be the executive producer for a brand new <b>Stargate series</b>
-            <br>
-            and in a turn of events the original MOVIES writer and producers: Roland Emmerich and Dean Devlin
-            <br>
-            have returned 
-            <img src="">
+        <p>
+            And in a turn of events, the original movie's writer and producers — Roland Emmerich and
+            Dean Devlin — have returned.
+        </p>
 
-            <br>
-
+        <p>
             The new series has been getting a lot of hype since its announcement.
+        </p>
 
-            <br>
+        <p>
+            Though many fans still fear what will become of the series due to the entertainment
+            industry's recent struggles.
+        </p>
 
-            though many fans still fear what will become of the series due to nowadays colossal failure with the entertainment industry.
+        <p>Thanks for checking out my website. See ya!</p>
+  <br>
+  <br>
+  <br>
+<br>
 
-            <br>
-            <br>
-
-            Thanks for checking out my website. See ya!      
-
-            <br>
-            <br>
-            <br>
-            <Br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
-            <a href="https://youtu.be/8Pc0AEbfnBM">.</a>
-
-            <br>
-            <br>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <p><a href="https://youtu.be/8Pc0AEbfnBM" target="" style="color: #1d1d1d;">.</a></p>
+    </div>
 
 
+    <script>
+        function showPage(name) {
+            document.querySelectorAll('.page').forEach(function(p) {
+                p.classList.remove('active');
+            });
+            document.querySelectorAll('.navbar a').forEach(function(a) {
+                a.classList.remove('active');
+            });
+            document.getElementById('page-' + name).classList.add('active');
+            document.getElementById('tab-' + name).classList.add('active');
+        }
+    </script>
 
-
-
-
-
-              
-    </body>
+</body>
 </html>
